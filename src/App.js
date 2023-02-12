@@ -6,14 +6,16 @@ import Home from './pages/Home';
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route path=":details" element={<Details />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <div className="content">
+        <BrowserRouter>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />}>
+              <Route path=":details" element={<Details />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
   );
 }

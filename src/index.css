@@ -1,13 +1,50 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/gill-sans');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Gill Sans', sans-serif;
+  background-color: rgb(236, 76, 138);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-bar {
+  display: flex;
+  padding: 0.5em;
+  justify-content: space-between;
+  font-weight: 100;
+  font-size: 1.2em;
+  font-family: 'Lato', sans-serif;
+}
+
+.heading-content {
+  text-align: center;
+  background-color: rgb(167, 35, 86);
+  height: 12em;
+}
+
+.right-nav {
+  display: flex;
+  gap: 25px;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  margin-top: 4em;
+}
+
+.cont {
+  height: 8em;
+  text-align: center;
+}
+
+.cont:nth-child(4n+3),
+.cont:nth-child(4n+2) {
+  background-color: rgb(167, 35, 86);
 }
