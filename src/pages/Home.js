@@ -42,7 +42,7 @@ function Home() {
       </div>
       <div className="contents">
         {renderCountries.map((country) => (
-          <Link className="details-link" to={`/details/${country.id}`} key={country.id} element={<Details />}>
+          <Link className="details-link" to="/details" key={country.id} element={<Details />}>
             <Country
               key={country.id}
               id={country.id}
