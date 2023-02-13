@@ -22,7 +22,26 @@
 .heading-content {
   text-align: center;
   background-color: rgb(167, 35, 86);
-  height: 12em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.world-image {
+  max-width: 60%;
+  height: auto;
+  background-color: rgb(167, 35, 86);
+}
+
+.heading-content h2 {
+  align-self: flex-end;
+  text-align: right;
+  background-color: rgb(167, 35, 86);
+}
+
+.countries-num {
+  font-size: 1.6em;
+  background-color: rgb(167, 35, 86);
 }
 
 .right-nav {
@@ -35,17 +54,18 @@
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 0;
   grid-row-gap: 0;
-  margin: 1em;
+  margin: 0 1em;
 }
 
 .cont {
-  max-height: 13em;
+  max-height: 20em;
   text-align: right;
   display: flex;
   flex-direction: column;
   padding: 10px;
   justify-content: space-between;
   gap: 10px;
+  cursor: pointer;
 }
 
 .text-desc {
@@ -57,11 +77,6 @@
 
 .cont:nth-child(4n+3),
 .cont:nth-child(4n+2) {
-  background-color: rgb(167, 35, 86);
-}
-
-.text-desc:nth-child(4n+3),
-.text-desc:nth-child(4n+2) {
   background-color: rgb(167, 35, 86);
 }
 
@@ -79,5 +94,22 @@
 @media screen and (min-width: 768px) {
   .contents {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .heading-content {
+    height: 30em;
+    padding: 2em 15em;
+  }
+
+  .heading-content h2 {
+    margin-top: -5em;
+  }
+
+  .world-image {
+    min-width: 40%;
+  }
+
+  .text-desc {
+    font-size: 1.5em;
   }
 }

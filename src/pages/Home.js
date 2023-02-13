@@ -25,7 +25,14 @@ function Home() {
         <img
           src="https://www.transparentpng.com/thumb/world/flat-texture-blue-green-world-transparent-background-3xppkK.png"
           alt="flat texture blue green World transparent background @transparentpng.com"
+          className="world-image"
         />
+        <h2>
+          Number of Countries:
+          {' '}
+          <br />
+          <span className="countries-num">235</span>
+        </h2>
       </div>
       <div className="contents">
         {renderCountries(countries)}
