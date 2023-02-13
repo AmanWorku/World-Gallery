@@ -1,4 +1,4 @@
-import { createReducer, createAction, createAsyncThunk } from '@reduxjs/toolkit';
+import { createReducer, createAsyncThunk } from '@reduxjs/toolkit';
 import BaseURL from '../services/countryAPI';
 
 const FETCH_COUNTRIES = 'FETCH_COUNTRIES';
