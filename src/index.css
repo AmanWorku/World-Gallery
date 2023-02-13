@@ -40,11 +40,19 @@
 }
 
 .cont {
-  height: 8em;
+  height: 10em;
   text-align: center;
+  display: flex;
+  padding: 2em;
+  justify-content: space-between;
 }
 
-.cont:nth-child(4n+3),
-.cont:nth-child(4n+2) {
+.contents:nth-child(4n+3),
+.contents:nth-child(4n+2) {
   background-color: rgb(167, 35, 86);
+}
+
+.flags {
+  max-width: 3em;
+  height: auto;
 }
