@@ -91,6 +91,27 @@
   font-weight: 200;
 }
 
+.search-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  background-color: white;
+  border: none;
+  height: 2.4em;
+  padding: 1em;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  border-radius: 20px;
+  color: rgb(212, 62, 119);
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
 @media screen and (min-width: 768px) {
   .contents {
     grid-template-columns: repeat(4, 1fr);

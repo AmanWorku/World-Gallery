@@ -10,21 +10,23 @@ function Home() {
   useEffect(() => {
     dispatch(retrieveCountries());
   }, [dispatch]);
-
   const countries = useSelector((state) => state.countriesReducer);
-  const renderCountries = (cou) => cou.map((country) => (
-    <Link className="details-link" to={`/details/${country.id}`} key={country.id} element={<Details />}>
-      <Country
-        key={country.id}
-        id={country.id}
-        name={country.name}
-        population={country.population}
-        flag={country.flag}
-      />
-    </Link>
-  ));
+
+  const [search, setSearch] = React.useState('');
+
+  const handleChange = (e) => {
+    setSearch(e.target.value);
+  };
+
+  const renderCountries = countries.filter(
+    (country) => country.name.toLowerCase().includes(search.toLowerCase()),
+  );
+
   return (
     <>
+      <div className="search-holder">
+        <input type="text" className="search-bar" placeholder="Search by name" onChange={handleChange} />
+      </div>
       <div className="heading-content">
         <img
           src="https://www.transparentpng.com/thumb/world/flat-texture-blue-green-world-transparent-background-3xppkK.png"
@@ -39,7 +41,17 @@ function Home() {
         </h2>
       </div>
       <div className="contents">
-        {renderCountries(countries)}
+        {renderCountries.map((country) => (
+          <Link className="details-link" to={`/details/${country.id}`} key={country.id} element={<Details />}>
+            <Country
+              key={country.id}
+              id={country.id}
+              name={country.name}
+              population={country.population}
+              flag={country.flag}
+            />
+          </Link>
+        ))}
       </div>
     </>
   );
