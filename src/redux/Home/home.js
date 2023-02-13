@@ -19,6 +19,7 @@ export const retrieveCountries = createAsyncThunk(FETCH_COUNTRIES,
           id: country.alpha3code,
           name: country.name,
           populations: country.population,
+          flag: country.flag,
         };
         countriesData.push(aCountry);
       });
