@@ -21,7 +21,7 @@
 
 .heading-content {
   text-align: center;
-  background-color: rgb(167, 35, 86);
+  background-color: rgb(212, 62, 119);
   display: flex;
   flex-direction: column;
   padding: 1em;
@@ -30,18 +30,18 @@
 .world-image {
   max-width: 60%;
   height: auto;
-  background-color: rgb(167, 35, 86);
+  background-color: rgb(212, 62, 119);
 }
 
 .heading-content h2 {
   align-self: flex-end;
   text-align: right;
-  background-color: rgb(167, 35, 86);
+  background-color: rgb(212, 62, 119);
 }
 
 .countries-num {
   font-size: 1.6em;
-  background-color: rgb(167, 35, 86);
+  background-color: rgb(212, 62, 119);
 }
 
 .right-nav {
@@ -54,7 +54,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 0;
   grid-row-gap: 0;
-  margin: 0 1em;
+  padding: 0 1em;
 }
 
 .cont {
@@ -77,7 +77,7 @@
 
 .cont:nth-child(4n+3),
 .cont:nth-child(4n+2) {
-  background-color: rgb(167, 35, 86);
+  background-color: rgb(212, 62, 119);
 }
 
 .flags {

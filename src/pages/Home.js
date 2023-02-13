@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Country from '../components/Country';
 import { retrieveCountries } from '../redux/Home/home';
+import Details from './Details';
 
 function Home() {
   const dispatch = useDispatch();
@@ -11,13 +13,15 @@ function Home() {
 
   const countries = useSelector((state) => state.countriesReducer);
   const renderCountries = (cou) => cou.map((country) => (
-    <Country
-      key={country.id}
-      id={country.id}
-      name={country.name}
-      population={country.population}
-      flag={country.flag}
-    />
+    <Link className="details-link" to={`/details/${country.id}`} key={country.id} element={<Details />}>
+      <Country
+        key={country.id}
+        id={country.id}
+        name={country.name}
+        population={country.population}
+        flag={country.flag}
+      />
+    </Link>
   ));
   return (
     <>
