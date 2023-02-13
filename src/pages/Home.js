@@ -20,9 +20,17 @@ function Home() {
     />
   ));
   return (
-    <div className="contents">
-      {renderCountries(countries)}
-    </div>
+    <>
+      <div className="heading-content">
+        <img
+          src="https://www.transparentpng.com/thumb/world/flat-texture-blue-green-world-transparent-background-3xppkK.png"
+          alt="flat texture blue green World transparent background @transparentpng.com"
+        />
+      </div>
+      <div className="contents">
+        {renderCountries(countries)}
+      </div>
+    </>
   );
 }
 

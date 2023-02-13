@@ -60,6 +60,11 @@
   background-color: rgb(167, 35, 86);
 }
 
+.text-desc:nth-child(4n+3),
+.text-desc:nth-child(4n+2) {
+  background-color: rgb(167, 35, 86);
+}
+
 .flags {
   height: auto;
   max-width: 70%;
