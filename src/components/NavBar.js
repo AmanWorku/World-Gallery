@@ -1,9 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Home from '../pages/Home';
 
 function NavBar() {
   return (
     <div className="nav-bar">
-      <i className="fa-solid fa-chevron-left" />
+      <Link to="../" element={<Home />}>
+        <i className="fa-solid fa-chevron-left" />
+      </Link>
       <p>Continents</p>
       <div className="right-nav">
         <i className="fa-solid fa-microphone" />

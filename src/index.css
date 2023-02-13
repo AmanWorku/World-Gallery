@@ -112,6 +112,10 @@
   outline: none;
 }
 
+.details-link {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
   .contents {
     grid-template-columns: repeat(4, 1fr);
