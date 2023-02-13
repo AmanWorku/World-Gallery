@@ -1,44 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import Country from '../components/Country';
+import { retrieveCountries } from '../redux/Home/home';
 
 function Home() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(retrieveCountries());
+  }, [dispatch]);
+
+  const countries = useSelector((state) => state.countriesReducer);
+  const renderCountries = (cou) => cou.map((country) => (
+    <Country
+      key={country.id}
+      id={country.id}
+      name={country.name}
+      population={country.population}
+      flag={country.flag}
+    />
+  ));
   return (
-    <>
-      <div className="heading-content">
-        Home
-      </div>
-      <div className="contents">
-        <div className="cont content1">
-          content 1
-        </div>
-        <div className="cont content2">
-          content 2
-        </div>
-        <div className="cont content3">
-          content 3
-        </div>
-        <div className="cont content4">
-          content 4
-        </div>
-        <div className="cont content5">
-          content 5
-        </div>
-        <div className="cont content5">
-          content 6
-        </div>
-        <div className="cont content5">
-          content 7
-        </div>
-        <div className="cont content5">
-          content 8
-        </div>
-        <div className="cont content5">
-          content 9
-        </div>
-        <div className="cont content5">
-          content 10
-        </div>
-      </div>
-    </>
+    <div className="contents">
+      {renderCountries(countries)}
+    </div>
   );
 }
 
