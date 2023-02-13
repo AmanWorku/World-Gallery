@@ -10,8 +10,8 @@ const Country = (props) => {
       <div className="cont" id={id}>
         <img src={flag} alt="a country flag" className="flags" />
         <div className="text-desc">
-          <p>{name}</p>
-          <p>{population}</p>
+          <p className="country-name">{name}</p>
+          <p className="population">{population}</p>
         </div>
       </div>
     </>
