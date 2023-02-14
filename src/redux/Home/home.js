@@ -25,6 +25,8 @@ export const retrieveCountries = createAsyncThunk(FETCH_COUNTRIES,
           subregion: country.subregion,
           area: country.area,
           timezones: country.timezones[0],
+          callingcode: country.callingCodes[0],
+          alphacode: country.alpha3Code,
         };
         countriesData.push(aCountry);
       });

@@ -60,6 +60,8 @@ function Home() {
               subregion={country.subregion}
               area={country.area}
               timezones={country.timezones}
+              callingcode={country.callingcode}
+              alphacode={country.alphacode}
             />
           </Link>
         ))}

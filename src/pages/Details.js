@@ -55,6 +55,14 @@ const Details = () => {
               <p>Timezone</p>
               <span>{item.timezones}</span>
             </tr>
+            <tr>
+              <p>Calling Code</p>
+              <span>{item.callingcode}</span>
+            </tr>
+            <tr>
+              <p>Alpha Code</p>
+              <span>{item.alphacode}</span>
+            </tr>
           </tbody>
         </table>
       </div>

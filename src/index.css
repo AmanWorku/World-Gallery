@@ -76,7 +76,12 @@
 }
 
 .contents:nth-child(4n+3),
-.contents:nth-child(4n+2) {
+.concontentst:nth-child(4n+2) {
+  background-color: rgb(212, 62, 119);
+}
+
+.contents:nth-child(4n+3) .cont,
+.contents:nth-child(4n+2) .cont {
   background-color: rgb(212, 62, 119);
 }
 
