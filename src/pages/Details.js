@@ -30,8 +30,30 @@ const Details = () => {
           <caption>Country&apos;s Stats</caption>
           <tbody>
             <tr>
-              <td>{item.name}</td>
-              <td>{console.log(item)}</td>
+              <p>Capital City</p>
+              <span>{item.capital}</span>
+            </tr>
+            <tr>
+              <p>Population</p>
+              <span>{item.population}</span>
+            </tr>
+            <tr>
+              <p>Region</p>
+              <span>{item.region}</span>
+            </tr>
+            <tr>
+              <p>Sub-region</p>
+              <span>
+                {item.subregion}
+              </span>
+            </tr>
+            <tr>
+              <p>Area</p>
+              <span>{item.area}</span>
+            </tr>
+            <tr>
+              <p>Timezone</p>
+              <span>{item.timezones}</span>
             </tr>
           </tbody>
         </table>

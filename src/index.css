@@ -116,6 +116,23 @@
   text-decoration: none;
 }
 
+table {
+  width: 100%;
+  font-size: 1.2em;
+  margin-top: 30px;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0.6em;
+}
+
+tr:nth-child(odd),
+tr:nth-child(odd) > * {
+  background-color: rgb(79, 129, 221);
+}
+
 @media screen and (min-width: 768px) {
   .contents {
     grid-template-columns: repeat(4, 1fr);
