@@ -29,6 +29,11 @@
 
 <b>World Gallery</b> is a SPA which provides users to look into the list of countries that are in the world. They can also click on their preferred country and see the details about a country.
 
+<p float="left">
+  <img src="img1.png" width="300" />
+  <img src="img2.png" width="300" /> 
+</p>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -41,12 +46,19 @@
     <li><a href="https://redux.js.org/">Redux</a></li>
   </ul>
 </details>
+<details>
+  <summary>API</summary>
+  <ul>
+    <li><a href="https://restcountries.com/v2/all">REST Countries</a></li>
+  </ul>
+</details>
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
 - [Live Demo Link](https://world-gallery.onrender.com)
+- [Loom Video Link](https://www.loom.com/share/4f7d653e8af44615a3f4d30c84c2a72d)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
