@@ -6,9 +6,6 @@ const Details = () => {
   const params = useParams();
   const countries = useSelector((state) => state.countriesReducer);
   const item = countries.find((coun) => coun.name === params.countryName);
-  // const location = useLocation();
-  // console.log(location);
-  // console.log(countries);
   return (
     <>
       <div className="heading-content">
