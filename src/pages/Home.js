@@ -38,6 +38,9 @@ function Home() {
           <br />
           <span className="countries-num">235</span>
         </h2>
+        <div className="stat-divide">
+          <p>Stats by population</p>
+        </div>
       </div>
       <div className="contents">
         {renderCountries.map((country) => (

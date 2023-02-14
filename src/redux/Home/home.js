@@ -3,7 +3,7 @@ import BaseURL from '../services/countryAPI';
 
 const FETCH_COUNTRIES = 'FETCH_COUNTRIES';
 const INITIAL_STATE = [];
-const fetchCountries = async () => {
+export const fetchCountries = async () => {
   const data = await (await fetch(BaseURL)).json();
   return data;
 };
