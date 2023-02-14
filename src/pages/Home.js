@@ -43,7 +43,10 @@ function Home() {
         {renderCountries.map((country) => (
           <Link
             className="details-link"
-            to={`/country/${country.name}`}
+            to={{
+              pathname: `/country/${country.name}`,
+              state: { stateParam: true },
+            }}
             key={country.id}
           >
             <Country
@@ -52,6 +55,11 @@ function Home() {
               name={country.name}
               population={country.population}
               flag={country.flag}
+              capital={country.capital}
+              region={country.region}
+              subregion={country.subregion}
+              area={country.area}
+              timezones={country.timezones}
             />
           </Link>
         ))}

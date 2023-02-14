@@ -7,7 +7,7 @@
   box-sizing: border-box;
   color: white;
   font-family: 'Gill Sans', sans-serif;
-  background-color: rgb(236, 76, 138);
+  background-color: rgb(66, 105, 178);
 }
 
 .nav-bar {
@@ -21,7 +21,7 @@
 
 .heading-content {
   text-align: center;
-  background-color: rgb(212, 62, 119);
+  background-color: rgb(87, 136, 227);
   display: flex;
   flex-direction: column;
   padding: 1em;
@@ -30,18 +30,18 @@
 .world-image {
   max-width: 60%;
   height: auto;
-  background-color: rgb(212, 62, 119);
+  background-color: rgb(87, 136, 227);
 }
 
 .heading-content h2 {
   align-self: flex-end;
   text-align: right;
-  background-color: rgb(212, 62, 119);
+  background-color: rgb(87, 136, 227);
 }
 
 .countries-num {
   font-size: 1.6em;
-  background-color: rgb(212, 62, 119);
+  background-color: rgb(87, 136, 227);
 }
 
 .right-nav {
@@ -75,8 +75,8 @@
   gap: 5px;
 }
 
-.cont:nth-child(4n+3),
-.cont:nth-child(4n+2) {
+.contents:nth-child(4n+3),
+.contents:nth-child(4n+2) {
   background-color: rgb(212, 62, 119);
 }
 

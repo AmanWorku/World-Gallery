@@ -5,33 +5,33 @@ import { useParams } from 'react-router-dom';
 const Details = () => {
   const params = useParams();
   const countries = useSelector((state) => state.countriesReducer);
-  const item = countries.find((coun) => coun.name.common === params.name);
+  const item = countries.find((coun) => coun.name === params.countryName);
+  // const location = useLocation();
+  // console.log(location);
+  // console.log(countries);
   return (
     <>
-      <div className="ar-characters-title-1">
-        <div className="ar-characters-text">
-          <p className="text"> Countries</p>
-        </div>
+      <div className="heading-content">
+        <img
+          src={item.flag}
+          alt={`Flag of ${item.name}`}
+          className="world-image"
+        />
+        <h2>
+          Name of Country:
+          {' '}
+          <br />
+          <span className="countries-num">{item.name}</span>
+        </h2>
       </div>
       <div className="ar-characters">
         <div className="character-title" />
         <table>
-          <caption>All Countries</caption>
-          <thead>
-            <tr>
-              <th scope="col">Country Flag</th>
-              <th scope="col">Country Name</th>
-              <th scope="col">Capital</th>
-              <th scope="col">Sub Region</th>
-              <th scope="col">Population</th>
-            </tr>
-          </thead>
+          <caption>Country&apos;s Stats</caption>
           <tbody>
-            <tr key={item.alpha2Code}>
-              <td data-label="Country Name">{console.log(countries)}</td>
-              <td data-label="Capital">{item.capital}</td>
-              <td data-label="Sub Region">{item.subregion}</td>
-              <td data-label="Population">{item.population}</td>
+            <tr>
+              <td>{item.name}</td>
+              <td>{console.log(item)}</td>
             </tr>
           </tbody>
         </table>
