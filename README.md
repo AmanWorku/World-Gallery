@@ -20,13 +20,14 @@
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
+- [🙏 Acknowledgments](#acknowledgments)
 - [⭐️ Show your support](#support)
 - [📝 License](#license)
 
 
 # 📖 World Gallery <a name="about-project"></a>
 
-<b>Space Travelers' Hub</b> is a SPA which provides users to reserve specific rockets and dragons with a mission which is fetched from external APIs. It also displays the selected services in My Profile page.
+<b>World Gallery</b> is a SPA which provides users to look into the list of countries that are in the world. They can also click on their preferred country and see the details about a country.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -37,6 +38,7 @@
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://redux.js.org/">Redux</a></li>
   </ul>
 </details>
 
@@ -44,7 +46,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://space-travlers-hub.onrender.com)
+- [Live Demo Link](https://world-gallery.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,7 +82,7 @@ Clone this repository using the GitHub link provided below.
 In the terminal, go to your file directory and run this command.
 
 ```
-$ git clone https://github.com/AmanWorku/Space-Travelers-Hub.git
+$ git clone https://github.com/AmanWorku/World-Gallery.git
 ```
 
 
@@ -129,39 +131,30 @@ $ npm run deploy
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Omar Farouq**
-
-- GitHub: [@Ofarouq310](https://github.com/Ofarouq310)
-- Twitter: [@Ofaouq310](https://twitter.com/ofarouq310)
-- LinkedIn: [@Ofarouq310](https://www.linkedin.com/in/Ofarouq310/)
-
-👤 **Edenlisk**
-
-- GitHub: [@Edenlisk](https://github.com/edenlisk)
-- Twitter: [@Edenlisk](https://twitter.com/nkumbuyedeni)
 
 👤 **Aman Worku**
 
-- GitHub: [@AmanWorku](https://github.com/AmanWorku)
-- Twitter: [@Amexworku](https://twitter.com/Amexworku)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/aman-worku-tsegaw/)
+- GitHub: [@Aman_on_GitHub](https://github.com/AmanWorku)
+- Twitter: [@Aman_on_Twitter](https://twitter.com/Amexworku)
+- LinkedIn: [@Aman_on_LinkedIn](https://www.linkedin.com/in/aman-worku-tsegaw/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/AmanWorku/Space-Travelers-Hub/issues).
+Feel free to check the [issues page](https://github.com/AmanWorku/World-Gallery/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -173,8 +166,8 @@ Give a ⭐️ if you like this project!
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Style the entire page to have the look and feel of a real space travel web page.
-- [ ] Create a new page that will make the user able to choose different kinds of suits from list of imagees.
+- [ ] Style the entire page to have the look and feel of a world gallery page.
+- [ ] Add a design for the desktop version too.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
