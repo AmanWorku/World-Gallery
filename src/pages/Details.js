@@ -22,7 +22,6 @@ const Details = () => {
         </h2>
       </div>
       <div className="ar-characters">
-        <div className="character-title" />
         <table>
           <caption>Country&apos;s Stats</caption>
           <tbody>
