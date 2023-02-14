@@ -7,7 +7,7 @@
   box-sizing: border-box;
   color: white;
   font-family: 'Gill Sans', sans-serif;
-  background-color: rgb(236, 76, 138);
+  background-color: rgb(66, 105, 178);
 }
 
 .nav-bar {
@@ -21,8 +21,27 @@
 
 .heading-content {
   text-align: center;
-  background-color: rgb(167, 35, 86);
-  height: 12em;
+  background-color: rgb(87, 136, 227);
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.world-image {
+  max-width: 60%;
+  height: auto;
+  background-color: rgb(87, 136, 227);
+}
+
+.heading-content h2 {
+  align-self: flex-end;
+  text-align: right;
+  background-color: rgb(87, 136, 227);
+}
+
+.countries-num {
+  font-size: 1.6em;
+  background-color: rgb(87, 136, 227);
 }
 
 .right-nav {
@@ -33,26 +52,111 @@
 .contents {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0;
   grid-row-gap: 0;
-  margin-top: 4em;
+  padding: 0 1em;
 }
 
 .cont {
-  height: 10em;
-  text-align: center;
+  max-height: 20em;
+  text-align: right;
   display: flex;
-  padding: 2em;
+  flex-direction: column;
+  padding: 10px;
   justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.text-desc {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .contents:nth-child(4n+3),
-.contents:nth-child(4n+2) {
-  background-color: rgb(167, 35, 86);
+.concontentst:nth-child(4n+2) {
+  background-color: rgb(212, 62, 119);
+}
+
+.contents:nth-child(4n+3) .cont,
+.contents:nth-child(4n+2) .cont {
+  background-color: rgb(212, 62, 119);
 }
 
 .flags {
-  max-width: 3em;
   height: auto;
+  max-width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.population {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.search-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  background-color: white;
+  border: none;
+  height: 2.4em;
+  padding: 1em;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  border-radius: 20px;
+  color: rgb(212, 62, 119);
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+.details-link {
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  font-size: 1.2em;
+  margin-top: 30px;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0.6em;
+}
+
+tr:nth-child(odd),
+tr:nth-child(odd) > * {
+  background-color: rgb(79, 129, 221);
+}
+
+@media screen and (min-width: 768px) {
+  .contents {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .heading-content {
+    height: 30em;
+    padding: 2em 15em;
+  }
+
+  .heading-content h2 {
+    margin-top: -5em;
+  }
+
+  .world-image {
+    min-width: 40%;
+  }
+
+  .text-desc {
+    font-size: 1.5em;
+  }
 }

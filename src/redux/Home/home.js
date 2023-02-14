@@ -16,10 +16,17 @@ export const retrieveCountries = createAsyncThunk(FETCH_COUNTRIES,
       const countriesData = [];
       response.forEach((country) => {
         const aCountry = {
-          id: country.alpha3code,
+          id: country.alpha3Code,
           name: country.name,
           population: country.population,
           flag: country.flag,
+          capital: country.capital,
+          region: country.region,
+          subregion: country.subregion,
+          area: country.area,
+          timezones: country.timezones[0],
+          callingcode: country.callingCodes[0],
+          alphacode: country.alpha3Code,
         };
         countriesData.push(aCountry);
       });
