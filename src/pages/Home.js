@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Country from '../components/Country';
 import { retrieveCountries } from '../redux/Home/home';
-import Details from './Details';
 
 function Home() {
   const dispatch = useDispatch();
@@ -42,7 +41,11 @@ function Home() {
       </div>
       <div className="contents">
         {renderCountries.map((country) => (
-          <Link className="details-link" to="/details" key={country.id} element={<Details />}>
+          <Link
+            className="details-link"
+            to={`/country/${country.name}`}
+            key={country.id}
+          >
             <Country
               key={country.id}
               id={country.id}
