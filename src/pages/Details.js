@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 
@@ -6,6 +6,7 @@ const Details = () => {
   const params = useParams();
   const countries = useSelector((state) => state.countriesReducer);
   const item = countries.find((coun) => coun.name === params.countryName);
+  useEffect(() => window.scrollTo(0, 0), []);
   return (
     <>
       <div className="heading-content">

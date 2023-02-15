@@ -9,6 +9,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+    - [Key Features ](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -52,6 +53,16 @@
     <li><a href="https://restcountries.com/v2/all">REST Countries</a></li>
   </ul>
 </details>
+
+### 🔥 Key Features <a name="key-features"></a>
+
+- Browse comprehensive list of all countries
+- Quickly search for countries by name
+- View detailed information on each country
+- Up-to-date data powered by REST Countries API
+- Design optimized for mobile devices
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>

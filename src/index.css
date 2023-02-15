@@ -49,6 +49,11 @@
   gap: 25px;
 }
 
+.img-ico {
+  display: flex;
+  justify-content: space-between;
+}
+
 .contents {
   display: grid;
   grid-template-columns: 1fr 1fr;
