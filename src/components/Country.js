@@ -8,7 +8,10 @@ const Country = (props) => {
   return (
     <>
       <div className="cont" id={id}>
-        <img src={flag} alt="a country flag" className="flags" />
+        <div className="img-ico">
+          <img src={flag} alt="a country flag" className="flags" />
+          <i className="fa-solid fa-circle-arrow-right" />
+        </div>
         <div className="text-desc">
           <p className="country-name">{name}</p>
           <p className="population">{population}</p>
