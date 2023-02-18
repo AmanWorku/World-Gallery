@@ -28,7 +28,7 @@ function Home() {
       </div>
       <div className="heading-content">
         <img
-          src="https://www.transparentpng.com/thumb/world/flat-texture-blue-green-world-transparent-background-3xppkK.png"
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Rotating_earth_%28large%29_transparent.gif"
           alt="flat texture blue green World transparent background @transparentpng.com"
           className="world-image"
         />

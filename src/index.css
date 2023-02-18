@@ -138,6 +138,11 @@
   outline: none;
 }
 
+.fa-circle-arrow-right:hover {
+  width: 1.2em;
+  transition: 0.2s ease;
+}
+
 table {
   width: 100%;
   font-size: 1.2em;
