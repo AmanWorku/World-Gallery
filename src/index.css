@@ -33,6 +33,11 @@
   background-color: rgb(87, 136, 227);
 }
 
+.world-image:hover {
+  max-width: 65%;
+  transition: 0.2s ease-in-out;
+}
+
 .heading-content h2 {
   align-self: flex-end;
   text-align: right;
@@ -106,6 +111,11 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.flags:hover {
+  max-width: 75%;
+  transition: 0.2s ease;
+}
+
 .population {
   font-size: 12px;
   font-weight: 200;
@@ -131,6 +141,11 @@
 
 .search-bar:focus {
   outline: none;
+}
+
+.fa-circle-arrow-right:hover {
+  width: 1.2em;
+  transition: 0.2s ease;
 }
 
 table {
