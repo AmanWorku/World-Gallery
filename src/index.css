@@ -33,6 +33,11 @@
   background-color: rgb(87, 136, 227);
 }
 
+.world-image:hover {
+  max-width: 65%;
+  transition: 0.2s ease-in-out;
+}
+
 .heading-content h2 {
   align-self: flex-end;
   text-align: right;
